@@ -14,7 +14,7 @@ func palindromePairs(words []string) [][]int {
     result := [][]int{}
     for pointer1, word1 := range words {
         for pointer2, word2 := range words {
-            if pointer1 == pointer2 || pointer1 > pointer2 {
+            if pointer2 <= pointer1{
                 continue
             }
             if isPalindrome(word1 + word2) {

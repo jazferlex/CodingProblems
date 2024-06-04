@@ -6,7 +6,7 @@ def palindromePairs(words):
     result = []
     for pointer1, word1 in enumerate(words):
         for pointer2, word2 in enumerate(words):
-            if pointer1 == pointer2 or pointer1 > pointer2:
+            if pointer2 <= pointer1:
                 continue
             if isPalindrome(word1+word2) :
                 result.append([pointer1, pointer2])
