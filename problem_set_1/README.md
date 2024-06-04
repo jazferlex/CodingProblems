@@ -1,4 +1,4 @@
-# Problem Set X: Palindrome Pairs
+# Problem Set 1: Palindrome Pairs
 
 ## Problem Description
 

@@ -12,13 +12,13 @@ def palindromePairs(words):
                 result.append([pointer1, pointer2])
     return result
 
-test_cases = [
-    ["bat", "tab", "cat"],
-    ["dog", "cow", "god", "woc"],
-    ["cat", "dog", "god", "tcc"],
-    ["cat", "dog", "ogd", "act", "dat"]
-]
 
 if __name__ == '__main__':
+    test_cases = [
+        ["bat", "tab", "cat"],
+        ["dog", "cow", "god", "woc"],
+        ["cat", "dog", "god", "tcc"],
+        ["cat", "dog", "ogd", "act", "dat"]
+    ]
     for words in test_cases:
         print(palindromePairs(words))
