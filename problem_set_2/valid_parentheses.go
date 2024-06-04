@@ -6,10 +6,8 @@ import (
 )
 
 func isValid(s string) bool {
-	prev_length := 0
-	for len(s) != prev_length{
+	for prev_length:=0; prev_length != len(s); prev_length = len(s){
 		s = strings.ReplaceAll(strings.ReplaceAll(strings.ReplaceAll(s,"()",""),"[]",""),"{}","")
-		prev_length = len(s)
 	}
 	return s == ""
 }
