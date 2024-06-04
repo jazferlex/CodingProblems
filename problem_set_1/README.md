@@ -21,8 +21,7 @@ Return a list of pairs of indices that can make these two words into a palindrom
 
 * **Python and Go:**
   * Using two pointers to iterate through the array of words
-  * To avoid pointing to the same word, `pointer2` should always be greater than `pointer1`
-  * Combine the two words
+  * To avoid pointing to the same word and revisiting words already done, `pointer2` should always be greater than `pointer1`
   * Use **isPalindrome** function to determine if the concatenation of these words is a palindrome
   * If it is a palindrome, append the pair of indices to the `result` list
 

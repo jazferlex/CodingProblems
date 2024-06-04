@@ -1,42 +1,24 @@
-# Problem Set X: Pairs
+# Problem Set 2: Valid Parentheses
 
 ## Problem Description
 
-    Given a list of words as input, find pairs of indices that can make these two words into a palindrome.
+  Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 ## Solution Overview
 
-**isPalindrome Function**
-
-Return true if the word is equal to its reverse.
-
-* **Python:**
-  * Python has a very straightforward way to reverse strings and arrays with `[::-1]`
-* **Go:**
-  * Using a reverse for loop to go through the word and appending each letter to a new string
-
-**palindromePairs Function**
-
-Return a list of pairs of indices that can make these two words into a palindrome.
-
-* **Python and Go:**
-  * Using two pointers to iterate through the array of words
-  * Combine the two words
-  * Use **isPalindrome** function to determine if the combined words is a palinndrome
-  * If it is a palindrome, append it to the `result` list
-  * Continue until loop reaches end of the list of words
+  Remove matching pairs from the string until there are no more matching pairs.
 
 ## Instructions to Run the Code
 
-Assuming the terminal is already inside **problem_set_1** folder
+Assuming the terminal is already inside **problem_set_2** folder
 
 * **Python:**
 
   ```
-  py palindrome_pairs.py
+  py valid_parentheses.py
   ```
 * **Go:**
 
   ```
-  go run palindrome_pairs.go
+  go run valid_parentheses.go
   ```

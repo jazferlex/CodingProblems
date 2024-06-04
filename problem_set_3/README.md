@@ -1,42 +1,24 @@
-# Problem Set X: Palindrome Pairs
+# Problem Set 3: : Longest Increasing Subsequence
 
 ## Problem Description
 
-    Given a list of words as input, find pairs of indices that can make these two words into a palindrome.
+  Given an unsorted array of integers, find the length of the longest increasing subsequence.
 
 ## Solution Overview
 
-**isPalindrome Function**
-
-Return true if the word is equal to its reverse.
-
-* **Python:**
-  * Python has a very straightforward way to reverse strings and arrays with `[::-1]`
-* **Go:**
-  * Using a reverse for loop to go through the word and appending each letter to a new string
-
-**palindromePairs Function**
-
-Return a list of pairs of indices that can make these two words into a palindrome.
-
-* **Python and Go:**
-  * Using two pointers to iterate through the array of words
-  * Combine the two words
-  * Use **isPalindrome** function to determine if the combined words is a palinndrome
-  * If it is a palindrome, append it to the `result` list
-  * Continue until loop reaches end of the list of words
+Iterating through the array, saving all numbers that form an increasing order to a new array and return the length of the new array.
 
 ## Instructions to Run the Code
 
-Assuming the terminal is already inside **problem_set_1** folder
+Assuming the terminal is already inside **problem_set_3** folder
 
 * **Python:**
 
   ```
-  py palindrome_pairs.py
+  py longest_increasing_subsequence.py
   ```
 * **Go:**
 
   ```
-  go run palindrome_pairs.go
+  go run longest_increasing_subsequence.go
   ```
