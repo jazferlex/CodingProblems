@@ -21,10 +21,10 @@ Return a list of pairs of indices that can make these two words into a palindrom
 
 * **Python and Go:**
   * Using two pointers to iterate through the array of words
+  * To avoid pointing to the same word, `pointer2` should always be greater than `pointer1`
   * Combine the two words
-  * Use **isPalindrome** function to determine if the combined words is a palinndrome
-  * If it is a palindrome, append it to the `result` list
-  * Continue until loop reaches end of the list of words
+  * Use **isPalindrome** function to determine if the concatenation of these words is a palindrome
+  * If it is a palindrome, append the pair of indices to the `result` list
 
 ## Instructions to Run the Code
 
