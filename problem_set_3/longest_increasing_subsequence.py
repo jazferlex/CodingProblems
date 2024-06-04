@@ -1,13 +1,13 @@
-def length_of_lis(nums):
+def lengthOfLIS(nums):
     result = [nums[0]]
     for num in nums[1:]:
         if num > result[-1]:
             result.append(num)
         else:
-            i = 0
-            while i < len(result) and result[i] < num:
-                i += 1
-            result[i] = num
+            for i, n in enumerate(result):
+                if num <= n:
+                    result[i] = num
+                    break
     return len(result)
 
 if __name__ == '__main__':
@@ -20,4 +20,4 @@ if __name__ == '__main__':
         [1, 3, 6, 7, 9, 4, 10, 5, 6],  # 6
     ]
     for test in test_cases:
-        print(length_of_lis(test))
+        print(lengthOfLIS(test))
